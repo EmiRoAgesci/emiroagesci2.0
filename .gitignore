@@ -1,0 +1,6 @@
+# files exact match
+.DS_Store
+
+# directory
+dist
+node_modules

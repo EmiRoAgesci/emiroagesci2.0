@@ -1,0 +1,39 @@
+{
+  "name": "emiroagesci2.0",
+  "private": true,
+  "version": "1.0.0",
+  "description": "tema wordpress regionale",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EmiRoAgesci/emiroagesci2.0.git"
+  },
+  "devEngines": {
+    "node": "6.x",
+    "npm": "3.x"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "chalk": "^1.1.3",
+    "co": "^4.6.0",
+    "co-prompt": "^1.0.0",
+    "favicons": "^4.8.2",
+    "node-emoji": "^1.4.1",
+    "opener": "^1.4.2",
+    "rimraf": "^2.5.4"
+  },
+  "config": {
+    "reporter": "xunit",
+    "enviroment": "dev",
+    "server": "dev.emiroagesci.local"
+  },
+  "author": "",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/EmiRoAgesci/emiroagesci2.0/issues"
+  },
+  "homepage": "https://github.com/EmiRoAgesci/emiroagesci2.0#readme"
+}

@@ -1,0 +1,29 @@
+{
+    "name": "gmazzap/wpstarter-simple-example",
+    "description": "Tester emiroagesci 2.0 theme",
+    "type": "project",
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://wpackagist.org"
+        }
+    ],
+    "require": {
+        "wecodemore/wpstarter": "~2.0",
+        "wpackagist-plugin/w3-total-cache": "0.9.5.1",
+        "wpackagist-plugin/category-posts": "4.6.2",
+        "wpackagist-plugin/category-specific-rss-feed-menu": "v2.0",
+        "wpackagist-plugin/xml-sitemap-feed": "4.7.4",
+        "wpackagist-plugin/really-simple-ssl": "2.3.14"
+    },
+    "config": {
+        "vendor-dir": "wp-content/vendor"
+    },
+    "scripts": {
+        "post-install-cmd": "WCM\\WPStarter\\Setup::run",
+        "post-update-cmd": "WCM\\WPStarter\\Setup::run"
+    },
+    "extra": {
+        "wordpress-install-dir": "wp"
+    }
+}
