@@ -47,6 +47,6 @@
     "build": "npm-run-all --silent build:favicon build:wordpress",
     "build:favicon": "node scripts/js/favicon.js",
     "build:wordpress": "node scripts/js/wordpress.build.js",
-    "clean": "rimraf php.server.out theme/assets/icons/"
+    "clean": "rimraf php.server.out theme/assets/icons/ server/wp-content/cache/tmp/"
   }
 }

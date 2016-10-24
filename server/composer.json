@@ -11,7 +11,7 @@
     "require": {
         "wecodemore/wpstarter": "~2.0",
         "johnpbloch/wordpress": "4.6.1",
-        "rest-api": "*",
+        "wpackagist-plugin/rest-api": "2.0-beta15",
         "wpackagist-plugin/w3-total-cache": "0.9.5.1",
         "wpackagist-plugin/category-posts": "4.6.2",
         "wpackagist-plugin/category-specific-rss-feed-menu": "v2.0",
@@ -20,7 +20,7 @@
     "require-dev": {
       "wp-cli/wp-cli" : "~0.22",
 	    "psy/psysh" : "~0.6",
-      "wpackagist-plugin/query-monitor": "2.7.*",
+      "wpackagist-plugin/query-monitor": "2.13.*",
       "wpackagist-plugin/debug-bar": "*"
     },
     "config": {
