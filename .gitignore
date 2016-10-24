@@ -1,6 +1,16 @@
 # files exact match
 .DS_Store
+.env
+npm-debug.log
+php.server.out
+scripts/start.sh
+scripts/server.pid
+server/wp-config.php
+
 
 # directory
 dist
 node_modules
+server/wp/
+server/wp-content/
+theme/assets/icons/

@@ -4,9 +4,6 @@
   "version": "1.0.0",
   "description": "tema wordpress regionale",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\""
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/EmiRoAgesci/emiroagesci2.0.git"
@@ -20,20 +17,36 @@
     "chalk": "^1.1.3",
     "co": "^4.6.0",
     "co-prompt": "^1.0.0",
-    "favicons": "^4.8.2",
+    "favicons": "^4.8.3",
+    "npm-run-all": "^3.1.0",
     "node-emoji": "^1.4.1",
     "opener": "^1.4.2",
-    "rimraf": "^2.5.4"
-  },
-  "config": {
-    "reporter": "xunit",
-    "enviroment": "dev",
-    "server": "dev.emiroagesci.local"
+    "rimraf": "^2.5.4",
+    "shelljs": "^0.7.4"
   },
   "author": "",
   "license": "GPL-3.0",
   "bugs": {
     "url": "https://github.com/EmiRoAgesci/emiroagesci2.0/issues"
   },
-  "homepage": "https://github.com/EmiRoAgesci/emiroagesci2.0#readme"
+  "homepage": "https://github.com/EmiRoAgesci/emiroagesci2.0#readme",
+  "config": {
+    "reporter": "xunit",
+    "enviroment": "dev",
+    "server": "dev.emiroagesci.local",
+    "port": 8080
+  },
+  "scripts": {
+    "initialize": "npm-run-all --silent check:hostfile clean install",
+    "check:hostfile": "node scripts/js/check.hostfile.js",
+    "install": "npm-run-all --silent build",
+    "start": "node scripts/js/run.php.server.js",
+    "stop": "node scripts/js/stop.php.server.js",
+    "open:dev": "opener http://$npm_package_config_server:$npm_package_config_port/",
+    "test": "echo \"Error: no test specified\"",
+    "build": "npm-run-all --silent build:favicon build:wordpress",
+    "build:favicon": "node scripts/js/favicon.js",
+    "build:wordpress": "node scripts/js/wordpress.build.js",
+    "clean": "rimraf php.server.out theme/assets/icons/"
+  }
 }
